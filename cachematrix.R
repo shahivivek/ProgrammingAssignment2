@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## makeCacheMatrix is a class which has matrix and 4 functions to set, get, setinverse and getinverse function.
+## Set - set matrix
+## Get - get matrix
+## setinverse - calculate inverse of the matrix
+## getinverse - get the inverse of matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   m<-NULL
@@ -18,7 +19,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve function return the inverse of the given matrix. 
+## First it checks if inverse of the matrix is already available in cache and if it is available it return from there.
+## otherwise it calculate the inverse by calling setinverse function.
 
 cacheSolve <- function(x, ...) {
   m <- x$getinverse()
